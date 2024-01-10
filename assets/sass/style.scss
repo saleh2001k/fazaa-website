@@ -1,0 +1,96 @@
+ /*
+Theme Name: Dalio
+Author: RRdevs
+Author URI: https://www.rrdevs.net/
+Version: 1.0.0
+Text Domain: 
+*/
+
+ // content
+ @import 'content-editor';
+// FONTS
+@import 'fonts';
+
+// MIXIN
+@import 'mixin';
+
+// TYPOGRAPHY
+@import 'typography';
+
+// CUSTOM
+@import 'custom';
+
+//BASE
+@import 'base';
+
+//BASE
+@import 'content';
+
+//BUTTON
+@import 'btn';
+
+//ICON FONTS
+@import 'icon';
+
+//BASIC
+@import 'basic';
+
+@import 'animation';
+
+/*************************************
+Template Section Styles
+**************************************/
+
+//Menu - header - style
+ @import 'header';
+
+//Menu - header - style
+ @import 'header-2';
+
+ //Menu - footer - style
+ @import 'footer';
+
+ //blog - style
+ @import 'blog';
+
+ //team - style
+ @import 'team';
+
+ //404 - style
+ @import '404';
+
+ //blog-details - style
+ @import 'blog-details';
+
+ //blog-details - style
+ @import 'service';
+
+ //service-tetail- style
+ @import 'service-detail';
+
+ //service-tetail- style
+ @import 'potfolio';
+
+ //service-tetail- style
+ @import 'about-us';
+
+ //service-tetail- style
+ @import 'index';
+
+ //service-tetail- style
+ @import 'home-3';
+
+ //service-tetail- style
+ @import 'home-2';
+
+ //service-tetail- style
+ @import 'testimonials';
+
+ //footer-1 - style
+ @import 'footer-1';
+
+ //footer-1 - style
+ @import 'search';
+
+//RESPONSIVE
+@import 'responsive';

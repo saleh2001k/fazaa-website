@@ -1,0 +1,252 @@
+.contact-info {
+    padding-bottom: 70px;
+
+    @media (max-width: 1199px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: 991px) {
+        padding-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+       padding-bottom: 30px; 
+    }
+    @media (max-width: 680px) {
+     padding-bottom: 15px;   
+    }
+
+
+    &__card {
+        padding: 41px 20px;
+        background: $white;
+        color: $primary;
+        transition: all 0.3s ease;
+        box-shadow: 0px 30px 160px 0px rgba(3, 4, 29, 0.10);
+
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 480px) {
+            padding: 20px 15px;
+        }
+
+        &:hover, &:focus {
+            background: $primary;
+            .title {
+                color: $white;
+            }
+            i {
+                color: $white;    
+            }
+            p, a {
+                color: $white;    
+            }
+            
+            svg path[stroke="#EB044F"] {
+                stroke: $white;
+            }
+        }
+
+
+        .icon-wrapper {
+            margin-bottom: 14px;
+            transition: all 0.3s ease;
+
+            i {
+
+                &.icon-map-pin {
+                   font-size: 50px;
+
+                   @media (max-width: 480px) {
+                       font-size: 30px;
+                   }
+                }
+                &.icon-mail {
+                    font-size: 50px;
+
+                    @media (max-width: 480px) {
+                        font-size: 30px;
+                    }
+                }
+                &.icon-call {
+                    font-size: 50px;
+
+                    @media (max-width: 480px) {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .title {
+            font-size: 22px;
+            color: #03041D;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        p, a {
+            color: #525257;
+            font-size: 16px;
+            line-height:26px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+.contact-us {
+    padding-top: 60px;
+    padding-bottom: 96px;
+
+    @media (max-width: 1199px) {
+        padding-top: 55px;
+        padding-bottom: 80px;
+    }
+    @media (max-width: 991px) {
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+       padding-top: 35px;
+       padding-bottom: 40px;
+    }
+    @media (max-width: 680px) {
+     padding-top: 15px;
+     padding-bottom: 30px;  
+    }
+
+
+    .entry-title {
+
+        .title {
+            color: #03041D;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 70px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: $grotesk;
+            letter-spacing: -1.44px;
+
+            @media (max-width: 991px) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+            @media (max-width: 767px) {
+                font-size: 35px;
+                line-height: 45px;
+            }
+
+            @media (max-width: 680px) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .contact-form {
+        background: #F5F5F5;
+        padding: 40px 30px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 480px) {
+            padding: 30px 15px;
+        }
+        .form-group {
+            margin-bottom: 8px;
+
+            .label {
+                color: #03041D;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: normal;
+            }
+            
+            input {
+                @include  placeholder(#525257, 14px, 400);
+            }
+        }
+
+           .form-check {
+
+            #checkbox {
+                width: 14px;
+                height: 14px;
+                background: #FFF;
+                border-radius: 2px;
+                border: 1px solid rgba(3, 4, 29, 0.30);
+            }
+            label {
+                color: #525257;
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                font-family: $inter;
+                line-height: normal;
+            }
+           }
+        textarea {
+            min-width:  100%;
+            min-height: 140px !important;
+
+            @media (max-width: 480px) {
+                min-height: 100px !important;
+            }
+        }
+
+        input[type="tel"],
+        input[type="url"],
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="search"],
+        select, textarea  {
+
+            @media (max-width: 767px) {
+                width: 100% !important;
+            }
+        }
+
+        .form-control {
+            border: 0 !important;
+            color: #33353E !important;
+            max-width: 100% !important;
+            font-size: 14px !important;
+            border-radius: 0 !important;
+            font-weight: 400 !important;
+            line-height: 22px !important; 
+            padding: 13px 15px !important;
+            background: $white !important; 
+            font-family: $inter !important;
+            @include transition(all 0.5s ease);
+            @include placeholder(#33353E, 14px, 400);
+            box-shadow: 0px 4px 14px 0px rgba(3, 4, 29, 0.10)!important;
+            &:focus {
+                color: none;
+                border: none;
+                border-radius: 0;
+                outline: 0 !important;
+                box-shadow: none !important;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        .btn-info {
+            margin-top: 10px;
+        }
+    }
+}
+
+.contact-map-wrap {
+
+    iframe {
+        border: none;
+    }
+}

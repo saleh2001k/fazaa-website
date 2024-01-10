@@ -1,0 +1,618 @@
+.about-us {
+	padding-bottom: 50px;
+
+	@media (max-width: 1199px) {
+		padding-bottom: 30px;
+	}
+	@media (max-width: 991px) {
+		padding-bottom: 0px;
+	}
+
+	.entry-title {
+		position: relative;
+		margin-bottom: 50px;
+
+		@media (max-width: 991px) {
+			margin-bottom: 40px;
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+		}
+
+		&:before {
+		    top: 30px;
+		    left: 93%;
+			height: 1px;
+			content: "";
+			width: 56px;
+			rotate: 90deg;
+			position: absolute;
+			background: rgba(11, 15, 40, 0.10);
+		}
+		.title {
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 56px;
+			font-family: $grotesk;
+
+			@media (max-width: 991px) {
+				font-size: 45px;
+				line-height: 60px;
+			}
+			@media (max-width: 767px) {
+				font-size: 35px;
+				line-height: 45px;
+			}
+			@media (max-width: 680px) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 18px;
+		max-width: 513px;
+	}
+	
+	&__description {
+		@media (max-width: 767px) {
+			padding-bottom: 30px;
+		}
+	}
+
+	&__item {
+		//cursor: pointer;
+		margin-bottom: 30px;
+		padding:28px 30px 25px 20px;
+		border: 1px solid rgba(3, 4, 29, 0.10);
+
+	    @media (max-width: 680px) {
+    		padding: 22px 25px 10px 20px;
+	    }
+		@media (max-width: 480px) {
+			padding: 20px 20px 0px 20px;
+		}
+
+		&:hover i {
+			background: $primary !important;
+			color: $white !important;
+			
+			svg path[stroke="#EB044F"] {
+				stroke: $white;
+			}
+		}
+
+		a:any-link:hover {
+			color: $primary !important;
+			
+			h6 {
+				color: $primary;
+			}
+		}
+		
+		.icon-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			i {
+				width: 80px;
+			    height: 80px;
+			    display: flex;
+				color: $primary;
+			    font-size: 33px;
+			    align-items: center;
+			    border-radius: 500px;
+			    justify-content: center;
+			    transition: all 0.3s ease;
+			    background: rgba(235, 4, 79, 0.1);
+
+			    @media (max-width: 680px) {
+		    		width: 60px;
+		    	    height: 60px;
+		    	    font-size: 25px;
+			    }
+			    @media (max-width: 480px) {
+		    		width: 50px;
+		    	    height: 50px;
+		    	    font-size: 20px;
+			    }
+			}
+
+			.fa-arrow-right {
+				color: $black;
+				font-size: 17px;
+			}
+		}
+
+		.sub-title {
+			font-size: 22px;
+			margin-top: 14px;
+			margin-bottom: 8px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+	}
+}
+
+.about-us-business {
+	padding: 60px 0;
+	position: relative;
+
+	@media (max-width: 1199px) {
+		padding: 40px 0;
+	}
+	@media (max-width: 991px) {
+		padding: 3px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
+
+	.media-wrapper {
+
+		&:after {
+			top: -277px;
+			content: "";
+			z-index: -1;
+			width: 658px;
+			left: -445px;
+			height: 732px;
+			position: absolute;
+			animation: moving 9s linear infinite;
+			background-image: url(../images/about-us/About-pattan-1.svg);
+		}
+
+		.media {
+
+			img {
+
+				&.frist-img {
+					width: 332px;
+					padding: 4px;
+					height: 497px;
+					position: relative;
+					margin-right: 10px;
+					border-radius: 150px;
+					border-radius: 150px;
+					box-sizing: border-box;
+					background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 146px, transparent 146px) 0% 0%/150px 150px no-repeat,
+		            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 146px, transparent 146px) 100% 0%/150px 150px no-repeat,
+		            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 146px, transparent 146px) 0% 100%/150px 150px no-repeat,
+		            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 146px, transparent 146px) 100% 100%/150px 150px no-repeat,
+		            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 8px) calc(100% - 300px) no-repeat,
+		            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 300px) calc(100% - 8px) no-repeat,
+		            linear-gradient(1deg, transparent 0%, #EB044F 100%);
+
+		            @media (max-width: 680px) {
+		            	width: 260px;
+		            	height: 440px;
+		            }
+    	            @media (max-width: 575px) {
+                	    width: 220px;
+                	    height: 400px;
+    	            }
+    	            @media (max-width: 480px) {
+            	        margin: 0;
+            	        width: 150px;
+            	        height: 280px;
+    	            }
+				}
+
+				&.secend-img {
+					width: 248px;
+					padding: 4px;
+					height: 497px;
+					margin-top: 50px;
+					margin-left: 10px;
+					border-radius: 189px;
+					border-radius: 124px;
+					box-sizing: border-box;
+					background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 120px, transparent 120px) 0% 0%/124px 124px no-repeat,
+		            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 120px, transparent 120px) 100% 0%/124px 124px no-repeat,
+		            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 120px, transparent 120px) 0% 100%/124px 124px no-repeat,
+		            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 120px, transparent 120px) 100% 100%/124px 124px no-repeat,
+		            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 8px) calc(100% - 248px) no-repeat,
+		            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 248px) calc(100% - 8px) no-repeat,
+		            linear-gradient(transparent 0%, #EB044F 100%);
+
+		            @media (max-width: 680px) {
+		            	width: 260px;
+		            	height: 440px;
+		            }
+		            @media (max-width: 575px) {
+	            	    width: 220px;
+	            	    height: 400px;
+	            	    margin-top: 0px;
+		            }
+    	            @media (max-width: 480px) {
+            	        width: 130px;
+            	        height: 280px;
+            	        margin: 0;
+    	            }
+				}
+			}
+		}
+
+		.icon-wrapper {
+			top: 212px;
+			z-index: 1;
+			left: 259px;
+			width: 130px;
+			display: flex;
+			height: 130px;
+			position: absolute;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: 1199px) {
+				left: 287px;
+			}
+
+			@media (max-width: 680px) {
+				top: 187px;
+				left: 220px;
+			}
+
+			@media (max-width: 575px) {
+				top: 120px;
+				left: 180px;
+			}
+			@media (max-width: 480px) {
+			    top: 65px;
+			    left: 100px;
+			}
+
+			&:hover, &:focus {
+				//cursor: pointer;
+			}
+
+			&:after {
+				content: "";
+				width: 130px;
+				height: 130px;
+				display: flex;
+				z-index: 99999;
+				text-align: center;
+				align-items: center;
+				background-size: cover;
+				justify-content: center;
+				background-repeat: 	no-repeat;
+				animation: circle 8s ease-in-out infinite;
+				background-image: url(../images/home-3/agency-brand.svg);
+
+				@media (max-width: 991px) {
+					width: 100px;
+					height: 100px;
+				}
+
+				@media (max-width: 480px) {
+					width: 60px;
+					height: 60px;
+				}
+			}
+
+			i {
+				display: flex;
+				color: $white;
+				z-index: 999999;
+				text-align: center;
+				position: absolute;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+
+	.title {
+		font-size: 60px;
+		margin-top: 35px;
+		line-height: 70px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		font-family: $grotesk;
+
+		@media (max-width: 991px) {
+		    font-size: 45px;
+		    line-height: 60px;
+		}
+		@media (max-width: 767px) {
+		    font-size: 35px;
+		    line-height: 45px; 
+		}
+		@media (max-width: 680px) {
+		    font-size: 30px;
+		    margin-top: 10px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		color: #525257;
+	}
+
+	ul {
+
+		li {
+			margin-top: 19px;
+			position: relative;
+			padding-left: 30px;
+			color: #03041D;
+
+			&:last-child {
+				border-bottom: 1px solid rgba(3, 4, 29, 0.10);
+				padding-bottom: 30px;
+			}
+
+			&:before {
+				left: 0;
+				top: 4px;
+				width: 24px;
+				border: none;
+				height: 24px;
+				padding: 8px;
+				font-size:14px;
+				display: flex;
+				color: $primary;
+				content: "\f00c";
+				position: absolute;
+				align-items: center;
+				border-radius: 500px;
+				justify-content: center;
+				background: rgba(235, 4, 79, 0.10);
+				font-family: "Font Awesome 5 Pro";
+			}
+		}
+	}
+
+	.author {
+		display: flex;
+		margin-top: 30px;
+		align-items: center;
+
+		.media {
+
+			img {
+
+			}
+		}
+
+		.name {
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+			margin-left: 10px;
+
+			&:any-link {
+				&:hover, :focus {
+					color: $secondary;
+				}
+			}
+
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: $primary;
+			}
+		}
+	}
+}
+
+.questions {
+	overflow: hidden;
+	padding: 70px 0;
+	position: relative;
+
+	.has--pattan {
+
+		&:before {
+			content: "";
+			top: 157px;
+			width: 658px;
+			height: 732px;
+			right: -582px;
+			position: absolute;
+			background-size: cover;
+			background-repeat: no-repeat;
+			animation: moving 9s linear infinite;
+			background-image: url(../images/about-us/About-pattan-1.svg);
+		}
+	}
+
+	@media (max-width: 1199px) {
+		padding: 50px 0;
+	}
+	@media (max-width: 991px) {
+		padding-top: 35px;
+		padding-bottom: 0;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
+
+	.media-questions {
+		margin-left: calc(-57vw / 2 + 50% / 2);
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: -28px;
+
+		@media (max-width: 1199px) {
+			margin-top: 0;
+			margin-bottom: 0px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 30px;
+		}
+		@media (max-width: 680px) {
+			margin-bottom: 30px;
+		}
+
+		.title {
+			color: #03041D;
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 70px;
+			font-family: $grotesk;
+			letter-spacing: -3.44px;
+			margin-bottom: 30px;
+
+			@media (max-width: 991px) {
+				font-size: 45px;
+				line-height: 60px;
+			}
+			@media (max-width: 767px) {
+				font-size: 35px;
+				line-height: 45px;
+			}
+			@media (max-width: 680px) {
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+.about-us {
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	
+	@media (max-width: 1199px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 991px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 20px 0 40px;
+	}
+
+	.slick-slider {
+	    margin-left: 25px;
+	}
+	.slick-slide {
+	    margin-left:25px;
+	} 
+
+	.about-us-slider {
+
+		.media {
+			cursor: pointer;
+			position: relative;
+
+			&:after {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				opacity: 0.6;
+				position: absolute;
+				background: #03041D;
+				transition: all 0.3s ease;
+			}
+
+			&:hover {
+
+				&:after {
+					opacity: 0;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 500px;
+				object-fit: cover;
+
+				@media (max-width: 1850px) {
+					height: 450px;
+				}
+				@media (max-width: 1399px) {
+					height: 400px;
+				}
+
+				@media (max-width: 1199px) {
+					height: 350px;
+				}
+
+				@media (max-width: 991px) {
+					height: 300px;
+				}
+				@media (max-width: 575px) {
+					height: 200px;
+				}
+			}
+		}
+	}
+
+	.slider-controls {
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+		display: flex;
+		justify-content: space-between;
+		
+	  .slick-arrow {
+	    width: 50px;
+	    height: 50px;
+	    color: $white;
+	    border-radius: 0;
+	    margin-left: 50px;
+	    margin-right: 50px;
+	    border-radius: 50px;
+	    background: transparent;
+	    border: 1px solid $white;
+	    @include transition(all 0.3s ease);
+
+	    i {
+	      font-size: 18px;
+	      display: inline-block;
+	      transform: rotate(180deg);
+	    }
+
+	    &.slide-prev {
+	    	left: 0;
+	    	z-index: 1;
+	    	position: absolute;
+	    	top: calc(50% - 25px);
+	    }
+
+	    &.slide-next {
+	    	right: 0;
+	    	z-index: 1;
+	    	position: absolute;
+			top: calc(50% - 25px);
+
+	      i {
+	        transform: rotate(0deg);
+	      }
+	    }
+
+	    &:hover,
+	    &:focus {
+	      color: $primary;
+	      background-color: $white;
+	    }
+	  }
+	}
+}
+
+
+.content-area {
+
+	&.about {
+		overflow: inherit !important;
+	}
+}

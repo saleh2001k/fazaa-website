@@ -1,0 +1,229 @@
+.testimonials {
+	z-index: 1;
+	padding-top: 207px;
+	padding-bottom: 178px;
+	overflow: hidden;
+	position: relative;
+	background: $black;
+	margin-bottom: 140px;
+
+	@media (max-width: 1199px) {
+		padding-top: 150px;
+		padding-bottom: 150px;
+		margin-bottom: 100px;
+	}
+	@media (max-width: 991px) {
+		padding-top: 100px;
+		margin-bottom: 80px;
+		padding-bottom: 100px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 70px;
+		margin-bottom: 50px;
+		padding-bottom: 70px;
+	}
+	@media (max-width: 680px) {
+		padding-top: 50px;
+		margin-bottom: 40px;
+		padding-bottom: 50px;
+	}
+
+	@media (max-width: 480px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&.hm-padding {
+		margin-top: 0px;
+		margin-bottom: 70px;
+	}
+
+	&:after {
+
+		content: "";
+		top: 0px;
+		z-index: -1;
+		width: 1724px;
+		right: 0px;
+		height: 1154px;
+		position: absolute;
+		animation: moving 9s linear infinite;
+		background-repeat: no-repeat;
+		background-image: url(../images/testimonials/isolation-pattan.svg);
+	}
+	.entry-title {
+
+		.title {
+			color: $white;
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 78px;
+			font-family: $grotesk;
+			letter-spacing: -2.44px;
+
+			@media (max-width: 991px) {
+			    font-size: 45px;
+			    line-height: 60px;
+			}
+			@media (max-width: 767px) {
+			    font-size: 35px;
+			    line-height: 45px;
+			    margin-bottom: 30px;
+			}
+			@media (max-width: 680px) {
+			    font-size: 30px;
+			}
+		}
+	}
+
+	.testimonials-slider {
+		margin-right: -235px;
+		z-index: 1;
+
+		@media (max-width: 1199px) {
+			margin-right: 0;
+		}
+		@media (max-width: 991px) {
+			margin-right: 0;
+		}
+
+		.slick-slide {
+		    margin-left:15px;
+			margin-right: 15px;
+		}
+
+		&__card {
+			background: $white;
+			padding: 40px 24px 40px 20px;
+
+			@media (max-width: 991px) {
+				padding: 30px 10px;
+			}
+
+			&.has--border {
+				border-radius: 10px;
+			}
+
+			.icon-wrapper {
+				margin-bottom: 16px;
+
+				i {
+					color: #EB044F;
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 32px;
+					letter-spacing: 4px;
+				}
+			}
+
+			p {
+				color: #525257;
+				width: 222px;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+
+				@media (max-width: 1199px) {
+					width: 100%;
+				}
+			}
+
+			.author {
+				display: flex;
+				overflow: hidden;
+				margin-top: 33px;
+
+				.media {
+					margin-right: 10px;
+
+					@media (max-width: 991px) {
+						margin-right: 5px;
+					}
+
+					img {
+						width: 50px;
+						height: 50px;
+						border-radius: 500px;
+
+						@media (max-width: 991px) {
+							width: 40px;
+							height: 40px;
+						}
+					}
+				}
+				.text {
+					margin-left: auto;
+
+					@media (max-width: 991px) {
+						margin-left: 5px;
+					}
+
+					.name {
+						color: #03041D;
+						font-size: 18px;
+						font-weight: 700;
+						line-height: 26px; 
+
+						@media (max-width: 991px) {
+							font-size: 13px;
+						}
+					}
+
+					.title {
+						font-size: 14px;
+						color: #EB044F;
+						font-weight: 400;
+						line-height: 22px;
+
+						&:hover, :focus {
+							//color: $secondary;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.slider-controls {
+		display: flex;
+		@media (max-width: 767px) {
+			display: none;
+		}
+		
+	  .slick-arrow {
+	    width: 50px;
+	    height: 50px;
+	    color: $white;
+	    margin-top: 36px;
+	    margin-right: 20px;
+	    border-radius: 50px;
+	    background: transparent;
+	    border: 2px solid $white;
+	    @include transition(all 0.3s ease);
+
+	    @media (max-width: 767px) {
+	    	margin-top: 10px;
+	    	margin-bottom: 40px;
+	    }
+
+	    i {
+	      font-size: 16px;
+	      display: inline-block;
+	      transform: rotate(180deg);
+	    }
+
+	    &.arrow-prev {
+	      i {
+	        transform: rotate(0deg);
+	      }
+	    }
+
+	    &:hover,
+	    &:focus {
+	      color: $primary;
+	      background-color: $white;
+	    }
+	  }
+	}
+}
